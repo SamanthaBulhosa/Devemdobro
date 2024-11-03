@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+    <link rel="stylesheet" href="./src/css/style.css" />
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Projeto Apex</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="menu">
+        <ul class="ordem">
+          <li class="tipo-Todos" onclick="filtrarPersonagens('Todos')">Todos</li>
+          <li class="tipo-Assalto" onclick="filtrarPersonagens('Assalto')">Assalto</li>
+          <li class="tipo-Combate" onclick="filtrarPersonagens('Combate')">Combate</li>
+          <li class="tipo-Batedor" onclick="filtrarPersonagens('Batedor')">Batedor</li>
+          <li class="tipo-Controle" onclick="filtrarPersonagens('Controle')">Controle</li>
+          <li class="tipo-Suporte" onclick="filtrarPersonagens('Suporte')">Suporte</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <div class="lendasapex">
+          <div class="cartoes-lendas">
+            <div class="cartao-lendas aberto tipo-Assalto" id="cartao-ash">
+              <div class="cartao-topo">
+                <div class="detalhes">
+                  <h2 class="nome">Ash</h2>
+                </div>
+
+                <span class="tipo">Assalto</span>
+
+                <div class="cartao-imagem">
+                  <img
+                    src="src/personagens/01 Ash.jpg"
+                    width="320"
+                    alt="Ash"
+                  />
+                </div>
+              </div>
+
+              <div class="cartao-informacoes">
+                <div class="descricao">
+                  <h3>Descrição</h3>
+
+                  <p>
+                    Armado com a capacidade de fornecer informações essenciais,
+                    alvos seguros e a capacidade de navegar pelo mapa
+                    rapidamente, Ash é uma lenda extremamente versátil que se
+                    encaixaria perfeitamente em qualquer esquadrão.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartao-lendas tipo-Assalto" id="cartao-fuse">
+              <div class="cartao-topo">
+                <div class="detalhes">
+                  <h2 class="nome">Fuse</h2>
+                  <span></span>
+                </div>
+
+                <span class="tipo">Assalto</span>
+
+                <div class="cartao-imagem">
+                  <img
+                    src="src/personagens/02 Fuse.jpg"
+                    width="320"
+                    alt="Fuse"
+                  />
+                </div>
+              </div>
+
+              <div class="cartao-informacoes">
+                <div class="descricao">
+                  <h3>Descrição</h3>
+                  <p>
+                    Fade é um personagem único, que apresenta uma combinação de
+                    habilidades suporte e ofensivas. Ainda que suas habilidades
+                    estejam mais focadas em um estilo de jogo agressivo, também
+                    pode ser usado para atrapalhar a vida dos adversários e
+                    ajudar o seu time a conquistar um melhor posicionamento em
+                    campo antes de partir para cima dos inimigos. Ainda assim,
+                    suas habilidades que atrapalham os adversários também são
+                    prejudiciais a si mesmo e seus aliados, deixando seus amigos
+                    expostos e vulneráveis. Por isso, não é recomendado para
+                    quem está começando a jogar este jogo agora.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartao-lendas tipo-Assalto" id="cartao-madmaggie">
+              <div class="cartao-topo">
+                <div class="detalhes">
+                  <h2 class="nome">Mad Maggie</h2>
+                  <span></span>
+                </div>
+
+                <span class="tipo">Assalto</span>
+
+                <div class="cartao-imagem">
+                  <img
+                    src="src/personagens/03 Mad Maggie.jpg"
+                    width="320"
+                    alt="Mad Maggie"
+                  />
+                </div>
+              </div>
+
+              <div class="cartao-informacoes">
+                <div class="descricao">
+                  <h3>Descrição</h3>
+                  <p>
+                    Um pokedev sênior constantemente atormentado por uma dor de
+                    cabeça persistente. Quando a dor se torna intensa
+                    demais,consegue acessar habilidades de programação
+                    extraordinárias, resolvendo problemas complexos com uma
+                    facilidade surpreendente.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartao-lendas tipo-Assalto" id="cartao-bangalore">
+              <div class="cartao-topo">
+                <div class="detalhes">
+                  <h2 class="nome">Bangalore</h2>
+                  <span></span>
+                </div>
+
+                <span class="tipo">Assalto</span>
+
+                <div class="cartao-imagem">
+                  <img
+                    src="src/personagens/04 Bangalore.jpg"
+                    width="320"
+                    alt="Bangalore"
+                  />
+                </div>
+              </div>
+
+              <div class="cartao-informacoes">
+                <div class="descricao">
+                  <h3>Descrição</h3>
+
+                  <p>
+                    Bangalore é a personagem híbrida do jogo. Suas habilidades
+                    podem ser usadas de forma tática, defensiva e ofensiva, o
+                    que a torna a personagem mais versátil de Apex Legends. Pela
+                    variedade nas habilidades, Bangalore encaixa bem em qualquer
+                    time, sendo uma das personagens mais usadas do jogo.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartao-lendas tipo-Assalto" id="cartao-ballistic">
+              <div class="cartao-topo">
+                <div class="detalhes">
+                  <h2 class="nome">Ballistic</h2>
+                  <span></span>
+                </div>
+
+                <span class="tipo">Assalto</span>
+
+                <div class="cartao-imagem">
+                  <img
+                    src="src/personagens/05 Ballistic.jpg"
+                    width="320"
+                    alt="Ballistic"
+                  />
+                </div>
+              </div>
+
+              <div class="cartao-informacoes">
+                <div class="descricao">
+                  <h3>Descrição</h3>
+                  <p>
+                    Mesmo sendo um programador iniciante, este pokedev já domina
+                    habilidades fundamentais em Javascript como: Depurar o
+                    código, Manipulação do DOM, Trabalhar com APIs, Conhecimento
+                    de frameworks e bibliotecas tornando o código mais
+                    eficiente.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartao-lendas tipo-Combate" id="cartao-alter">
+              <div class="cartao-topo">
+                <div class="detalhes">
+                  <h2 class="nome">Alter</h2>
+                  <span></span>
+                </div>
+
+                <span class="tipo">Combate</span>
+
+                <div class="cartao-imagem">
+                  <img
+                    src="src/personagens/06 Alter.jpg"
+                    width="320"
+                    alt="Alter"
+                  />
+                </div>
+              </div>
+
+              <div class="cartao-informacoes">
+                <div class="descricao">
+                  <h3>Descrição</h3>
+                  <p>
+                    Alter se interessava em mundos à beira da destruição completa. Não importa se algo devastador já estava acontecendo ou se ela daria um empurrãozinho para o apocalipse acontecer, ela estaria lá para assistir à catástrofe que se seguiria. Era apenas nesses momentos que as pessoas tiravam as máscaras que sempre usavam e ela podia ver seus verdadeiros eus.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartao-lendas tipo-Combate" id="cartao-wraith">
+              <div class="cartao-topo">
+                <div class="detalhes">
+                  <h2 class="nome">Wraith</h2>
+                  <span></span>
+                </div>
+
+                <span class="tipo">combate</span>
+
+                <div class="cartao-imagem">
+                  <img
+                    src="src/personagens/07 Wraith.jpg"
+                    width="320"
+                    alt="Wraith"
+                  />
+                </div>
+              </div>
+
+              <div class="cartao-informacoes">
+                <div class="descricao">
+                  <h3>Descrição</h3>
+                  <p>
+                    Wraith é uma das personagens mais populares do jogo. Suas
+                    habilidades são focadas em movimentação e permitem várias
+                    manobras evasivas. Se utilizada corretamente, Wraith é uma
+                    das personagens mais difíceis de eliminar, além de ser uma
+                    das mais úteis para o time. Dependendo da criatividade do
+                    jogador, sua habilidade suprema permite várias estratégias
+                    elaboradas de reposicionamento.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartao-lendas tipo-Combate" id="cartao-octane">
+              <div class="cartao-topo">
+                <div class="detalhes">
+                  <h2 class="nome">Octane</h2>
+                  <span></span>
+                </div>
+
+                <span class="tipo">Combate</span>
+
+                 <div class="cartao-imagem">
+                  <img
+                    src="src/personagens/09 Octane.jpg"
+                    width="320"
+                    alt="Octane"
+                  />
+                </div>
+              </div>
+
+              <div class="cartao-informacoes">
+                <div class="descricao">
+                  <h3>Descrição</h3>
+                  <p>
+                    Octane (ou OTÁVIO SILVA) é o personagem que seu estilo gira
+                    em torno da sua ótima movimentação e velocidade, que
+                    favorecem um gameplay mais agressivo e também possibilita
+                    diversas manobras evasivas.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartao-lendas tipo-Combate" id="cartao-horizon">
+              <div class="cartao-topo">
+                <div class="detalhes">
+                  <h2 class="nome">Horizon</h2>
+                  <span></span>
+                </div>
+
+                <span class="tipo">Combate</span>
+
+                <div class="cartao-imagem">
+                  <img
+                    src="src/personagens/10 Horizon.jpg"
+                    width="320"
+                    alt="Horizon"
+                  />
+                </div>
+              </div>
+
+             <div class="cartao-informacoes">
+                <div class="descricao">
+                  <h3>Descrição</h3>
+                  <p>
+                    As habilidades de Horizon provaram ser sólidas no campo de
+                    batalha, tornando-a a melhor escolha entre os jogadores de
+                    Apex Legends. No entanto, um sério enfraquecimento reduziu
+                    sua poderosa habilidade táctica para apenas um impulso de
+                    movimento, em vez de uma torre de atirador portátil. Vale a
+                    pena pegar um monte de granadas para jogar após sua
+                    habilidade Black Hole Ultimate, pois os oponentes terão
+                    dificuldade para evitar as explosões. Horizon era um
+                    personagem básico rivalizando com Wraith em seu auge, mas
+                    hoje em dia é uma escolha de nicho com utilidade limitada.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartao-lendas tipo-Combate" id="cartao-valkyrie">
+              <div class="cartao-topo">
+                <div class="detalhes">
+                  <h2 class="nome">Valkyrie</h2>
+                  <span></span>
+                </div>
+
+                <span class="tipo">combate</span>
+
+                <div class="cartao-imagem">
+                  <img
+                    src="src/personagens/11 Valkyrie.jpg"
+                    width="320"
+                    alt="Valkyrie"
+                  />
+                </div>
+              </div>
+
+              <div class="cartao-informacoes">
+                <div class="descricao">
+                  <h3>Descrição</h3>
+                  <p>
+                    A habilidade passiva de Valkyrie é particularmente útil ao
+                    navegar no mapa, no entanto, é fácil ficar sem combustível,
+                    o que pode ser problemático ao tentar fugir de qualquer
+                    oposição próxima. A incapacidade de disparar uma arma ao
+                    atirar impede que a Valquíria suba para o nível. Embora o
+                    Legends não seja o melhor para duelos 1v1, Valkyrie é
+                    extremamente útil para ajudar na aquisição de reconhecimento
+                    e causar muitos danos.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartao-lendas tipo-Batedor" id="cartao-pathfinder">
+              <div class="cartao-topo">
+                <div class="detalhes">
+                  <h2 class="nome">Pathfinder</h2>
+                  <span></span>
+                </div>
+
+                <span class="tipo">Batedor</span>
+
+                <div class="cartao-imagem">
+                  <img
+                    src="src/personagens/12 Pathfinder.jpg"
+                    width="320"
+                    alt="Pathfinder"
+                  />
+                </div>
+              </div>
+
+              <div class="cartao-informacoes">
+                <div class="descricao">
+                  <h3>Descrição</h3>
+                  <p>
+                    Pathfinder é outro personagem de suporte, mas muito
+                    diferente de Lifeline. Suas habilidades são voltadas para
+                    ajudar o time em termos de movimentação e posicionamento.
+                    Pathfinder é um dos personagens mais interessantes do jogo.
+                    Com criatividade, suas habilidades podem ser usadas de
+                    inúmeras formas.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartao-lendas tipo-Batedor" id="cartao-bloodhound">
+              <div class="cartao-topo">
+                <div class="detalhes">
+                  <h2 class="nome">Bloodhound</h2>
+                  <span></span>
+                </div>
+
+                <span class="tipo">Batedor</span>
+
+                <div class="cartao-imagem">
+                  <img
+                    src="src/personagens/13 Bloodhound.jpg"
+                    width="320"
+                    alt="Bloodhound"
+                  />
+                </div>
+              </div>
+
+              <div class="cartao-informacoes">
+                <div class="descricao">
+                  <h3>Descrição</h3>
+                  <p>
+                    Bloodhound é a rastreadora do time. Suas habilidades são
+                    voltadas para localizar oponentes, mostrando seu paradeiro
+                    atual ou onde estavam há pouco tempo. Bloodhound é
+                    extremamente útil em lugares fechados. Embora suas
+                    habilidades não sejam uma visão de raio-x, elas transmitem
+                    uma boa noção de onde os oponentes podem estar e do que está
+                    acontecendo atrás de paredes
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartao-lendas tipo-Batedor" id="cartao-crypto">
+              <div class="cartao-topo">
+                <div class="detalhes">
+                  <h2 class="nome">Crypto</h2>
+                  <span></span>
+                </div>
+
+                <span class="tipo">Batedor</span>
+
+                <div class="cartao-imagem">
+                  <img
+                    src="src/personagens/14 Crypto.jpg"
+                    width="320"
+                    alt="Crypto"
+                  />
+                </div>
+              </div>
+
+              <div class="cartao-informacoes">
+                <div class="descricao">
+                  <h3>Descrição</h3>
+                  <p>
+                    Crypto é o personagem que tem uma jogabilidade que gira em
+                    torno do seu drone de vigilância, que pode obter informação
+                    sobre a localização dos oponentes, além de causar dano e
+                    debuffs. O personagem favorece jogadores mais táticos e
+                    viabiliza estratégias mais ofensivas.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartao-lendas tipo-Batedor" id="cartao-seer">
+              <div class="cartao-topo">
+                <div class="detalhes">
+                  <h2 class="nome">Seer</h2>
+                  <span></span>
+                </div>
+
+                <span class="tipo">Batedor</span>
+
+                <div class="cartao-imagem">
+                  <img
+                    src="src/personagens/15 Seer.jpg"
+                    width="320"
+                    alt="Seer"
+                  />
+                </div>
+              </div>
+
+              <div class="cartao-informacoes">
+                <div class="descricao">
+                  <h3>Descrição</h3>
+                  <p>
+                    Artista das Emboscadas
+                    Antes de seu nascimento, foi previsto que Seer traria dor e sofrimento para o mundo... e na noite em que ele nasceu, um meteoro atravessou os ceús e atingiu a lua do seu mundo. Isso era considerado um mau presságio, e quando os olhos azuis de Obi Edolasim se abriram, sua comunidade viu uma criança amaldiçoada.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartao-lendas tipo-Batedor" id="cartao-vantage">
+              <div class="cartao-topo">
+                <div class="detalhes">
+                  <h2 class="nome">Vantage</h2>
+                  <span></span>
+                </div>
+
+                <span class="tipo">Batedor</span>
+
+                <div class="cartao-imagem">
+                  <img
+                    src="src/personagens/16 Vantage.jpg"
+                    width="320"
+                    alt="Vantage"
+                  />
+                </div>
+              </div>
+
+              <div class="cartao-informacoes">
+                <div class="descricao">
+                  <h3>Descrição</h3>
+                  <p>
+                    Franco-Atiradora Nata
+                    Xiomara "Mara" Contreras nasceu e foi criada apenas por sua mãe sobrevivencialista, Xenia, no planeta gelado Págos. Mara mostrou ter talento com um fuzil de precisão assim que se tornou grande o bastante para olhar pela mira e alcançar o gatilho ao mesmo tempo. A silenciosa Xenia só conseguia fazer sua filha tagarela parar de fazer perguntas dando à criança uma cópia da Enciclopédia das Terras Ermas, que Mara decorou do início ao fim.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartao-lendas tipo-Controle" id="cartao-caustic">
+              <div class="cartao-topo">
+                <div class="detalhes">
+                  <h2 class="nome">Caustic</h2>
+                  <span></span>
+                </div>
+
+                <span class="tipo">Controle</span>
+
+                <div class="cartao-imagem">
+                  <img
+                    src="src/personagens/17 Caustic.jpg"
+                    width="320"
+                    alt="Caustic"
+                  />
+                </div>
+              </div>
+
+              <div class="cartao-informacoes">
+                <div class="descricao">
+                  <h3>Descrição</h3>
+                  <p>
+                    Caustic é um dos dois personagens que precisam ser
+                    desbloqueados em Apex Legends. Suas habilidades são voltadas
+                    para dano em área (AoE). Além de serem ótimas em combate, as
+                    habilidades de Caustic podem ser usadas de forma estratégica
+                    para desencorajar oponentes a entrarem em determinada área.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartao-lendas tipo-Controle" id="cartao-wattson">
+              <div class="cartao-topo">
+                <div class="detalhes">
+                  <h2 class="nome">Wattson</h2>
+                  <span></span>
+                </div>
+
+                <span class="tipo">Controle</span>
+
+                <div class="cartao-imagem">
+                  <img
+                    src="src/personagens/18 Wattson.jpg"
+                    width="320"
+                    alt="Wattson"
+                  />
+                </div>
+              </div>
+
+              <div class="cartao-informacoes">
+                <div class="descricao">
+                  <h3>Descrição</h3>
+                  <p>
+                    Wattson é a personagem que a sua principal função é suporte
+                    e suas habilidades favorecem um gameplay defensivo e muito
+                    tático. A intenção dos desenvolvedores ao inserir Wattson no
+                    jogo foi de viabilizar o estilo defensivo no metagame.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartao-lendas tipo-Controle" id="cartao-rampart">
+              <div class="cartao-topo">
+                <div class="detalhes">
+                  <h2 class="nome">Rampart</h2>
+                  <span>#062</span>
+                </div>
+
+                <span class="tipo">Controle</span>
+
+                <div class="cartao-imagem">
+                  <img
+                    src="src/personagens/19 Rampart.jpg"
+                    width="320"
+                    alt="Rampart"
+                  />
+                </div>
+              </div>
+
+              <div class="cartao-informacoes">
+                <div class="descricao">
+                  <h3>Descrição</h3>
+                  <p>
+                    Modder Amplificada
+                    A Rampart é dona de seu próprio negócio e não precisa de mais nada, além de uma arma grande e uma mochila cheia de sucata, para sobreviver ao mundo perigoso das Terras Ermas. Antes de abrir sua popular oficina de modificações e Gaea, Ramya Parekh (também conhecida como Rampart) ganhou reputação nos circuitos de luta clandestina.
+                    "Se eu te decepcionar, provavelmente é porque eu me cansei de carregar você nas costas."
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartao-lendas tipo-Controle" id="cartao-catalyst">
+              <div class="cartao-topo">
+                <div class="detalhes">
+                  <h2 class="nome">Catalyst</h2>
+                  <span></span>
+                </div>
+
+                <span class="tipo">Controle</span>
+
+                <div class="cartao-imagem">
+                  <img
+                    src="src/personagens/20 Catalyst.jpg"
+                    width="320"
+                    alt="Catalyst"
+                  />
+                </div>
+              </div>
+
+              <div class="cartao-informacoes">
+                <div class="descricao">
+                  <h3>Descrição</h3>
+                  <p>
+                    Conjuradora Defensiva
+                    Tressa Crystal Smith não é exatamente a mais popular: uma mulher elegante e reservada que gosta mais de cristais do que da maioria das pessoas. Ela cresceu em Boreas, um planeta cheio de dificuldades com uma lua deteriorada. Para sobreviver ali era preciso conformidade e eficiência, mas Tressa nunca se adaptou a isso. 
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartao-lendas tipo-Controle" id="cartao-conduit">
+              <div class="cartao-topo">
+                <div class="detalhes">
+                  <h2 class="nome">Conduit</h2>
+                  <span></span>
+                </div>
+
+                <span class="tipo">Controle</span>
+
+                <div class="cartao-imagem">
+                  <img
+                    src="src/personagens/21 Conduit.jpg"
+                    width="320"
+                    alt="Conduit"
+                  />
+                </div>
+              </div>
+
+              <div class="cartao-informacoes">
+                <div class="descricao">
+                  <h3>Descrição</h3>
+                  <p>
+                    A expressão “trabalhe enquanto eles dormem” poderia ter sido
+                    facilmente criada por este pokedev. Afinal, ele tem o dom de
+                    codar por horas e horas, madrugada adentro, regado a muito
+                    café e energéticos. Sua dedicação é tão intensa que,
+                    enquanto a maioria das pessoas está descansando, ele está
+                    imerso em linhas de código, resolvendo problemas e criando
+                    soluções.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartao-lendas tipo-Suporte" id="cartao-mirage">
+              <div class="cartao-topo">
+                <div class="detalhes">
+                  <h2 class="nome">Mirage</h2>
+                </div>
+
+                <span class="tipo">suporte</span>
+
+                <div class="cartao-imagem">
+                  <img
+                    src="src/personagens/08 Mirage.jpg"
+                    width="320"
+                    alt="Mirage"/>
+                </div>
+              </div>
+
+              <div class="cartao-informacoes">
+                <div class="descricao">
+                  <h3>Descrição</h3>
+                  <p>
+                    Assim como Caustic, você precisa desbloquear Mirage. As
+                    habilidades do personagem são focadas em camuflagem e
+                    ilusões. Mirage é mais evasivo que Wraith e com a vantagem
+                    que, além de desaparecer de combates, engana os oponentes
+                    com hologramas, fazendo com que ataquem e exponham suas
+                    localizações
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartao-lendas tipo-Suporte" id="cartao-lifeline">
+              <div class="cartao-topo">
+                <div class="detalhes">
+                  <h2 class="nome">Lifeline</h2>
+                  <span></span>
+                </div>
+
+                <span class="tipo">Suporte</span>
+
+                <div class="cartao-imagem">
+                  <img
+                    src="src/personagens/22 Lifeline.jpg"
+                    width="320"
+                    alt="Lifeline"
+                  />
+                </div>
+              </div>
+
+              <div class="cartao-informacoes">
+                <div class="descricao">
+                  <h3>Descrição</h3>
+                  <p>
+                    Lifeline é uma personagem de suporte. Suas habilidades são
+                    voltadas para curar e equipar o time. Assim, a personagem é
+                    extremamente boa para combates no início da partida quando
+                    os jogadores ainda não conseguiram bons loots. Lifeline
+                    também é boa no fim de partidas quando o círculo já está
+                    pequeno e seu time não precisa se movimentar muito,
+                    permitindo que a personagem cure os jogadores enquanto estão
+                    em combate.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartao-lendas tipo-Suporte" id="cartao-gibraltar">
+              <div class="cartao-topo">
+                <div class="detalhes">
+                  <h2 class="nome">Gibraltar</h2>
+                  <span></span>
+                </div>
+
+                <span class="tipo">Suporte</span>
+
+                <div class="cartao-imagem">
+                  <img
+                    src="src/personagens/23 Gibraltar.jpg"
+                    width="320"
+                    alt="Gibraltar"
+                  />
+                </div>
+              </div>
+
+              <div class="cartao-informacoes">
+                <div class="descricao">
+                  <h3>Descrição</h3>
+                  <p>
+                    Gibraltar é um personagem tank e suporte ao mesmo tempo.
+                    Suas habilidades são todas defensivas e voltadas para a
+                    sobrevivência. Com Gibraltar você aguentará muito mais dano
+                    que o normal, além de poder proteger seus parceiros durante
+                    os combates. Em troca, o personagem não conta com
+                    habilidades ofensivas.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartao-lendas tipo-Suporte" id="cartao-loba">
+              <div class="cartao-topo">
+                <div class="detalhes">
+                  <h2 class="nome">Loba</h2>
+                  <span></span>
+                </div>
+
+                <span class="tipo">Suporte</span>
+
+                <div class="cartao-imagem">
+                  <img
+                    src="src/personagens/23 Loba.jpg"
+                    width="320"
+                    alt="Loba"
+                  />
+                </div>
+              </div>
+
+              <div class="cartao-informacoes">
+                <div class="descricao">
+                  <h3>Descrição</h3>
+                  <p>
+                    Ladra Translocadora
+                    Quando Loba tinha nove anos, ela viu Revenant, o simulacro assassino, matar sua família. Após perder tudo, Loba sobreviveu cometendo furtos. Conforme suas habilidades melhoraram, Loba usou tudo o que tinha para sair da sarjeta. Tudo mudou quando ela invadiu uma instalação supostamente impenetrável e pegou a tecnologia de transpulsão que havia lá.
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <nav class="listagem">
+          <ul class="Tipo-todos">
+              <li class="lendas tipo-Assalto ativo" id="ash">
+                  <img src="src/personagens/01 Ash.jpg" alt="cabeça do ash" />
+                  <span>Ash</span>
+              </li>
+              <li class="lendas tipo-Assalto" id="fuse">
+                  <img src="src/personagens/02 Fuse.jpg" alt="cabeça do fuse" />
+                  <span>Fuse</span>
+              </li>
+              <li class="lendas tipo-Assalto" id="madmaggie">
+                  <img src="src/personagens/03 Mad Maggie.jpg" alt="cabeça do mad maggie" />
+                  <span>Mad Maggie</span>
+              </li>
+              <li class="lendas tipo-Assalto" id="bangalore">
+                  <img src="src/personagens/04 Bangalore.jpg" alt="cabeça do bangalore" />
+                  <span>Bangalore</span>
+              </li>
+              <li class="lendas tipo-Assalto" id="ballistic">
+                  <img
+                  src="src/personagens/05 Ballistic.jpg"
+                  alt="cabeça do ballistic"/>
+                  <span>Ballistic</span>
+              </li>
+              <li class="lendas tipo-Combate" id="alter">
+                  <img
+                  src="src/personagens/06 Alter.jpg"
+                  alt="cabeça do Alter"/>
+                  <span>Alter</span>
+              </li>
+              <li class="lendas tipo-Combate" id="wraith">
+                <img
+                src="src/personagens/07 Wraith.jpg"
+                alt="cabeça do wraith"/>
+                <span>Wraith</span>
+              </li>
+              <li class="lendas tipo-Combate" id="octane">
+                <img
+                src="src/personagens/09 Octane.jpg"
+                alt="cabeça do Octane"/>
+                <span>Octane</span>
+              </li>
+              <li class="lendas tipo-Combate" id="horizon">
+                <img
+                src="src/personagens/10 Horizon.jpg"
+                alt="cabeça do Horizon"/>
+                <span>Horizon</span>
+              </li>
+              <li class="lendas tipo-Combate" id="valkyrie">
+                <img
+                src="src/personagens/11 Valkyrie.jpg"
+                alt="cabeça do Valkyrie"/>
+                <span>Valkyrie</span>
+              </li>
+              <li class="lendas tipo-Batedor" id="pathfinder">
+                <img
+                src="src/personagens/12 Pathfinder.jpg"
+                alt="cabeça do "/>
+                <span>Pathfinder</span>
+              </li>
+              <li class="lendas tipo-Batedor" id="bloodhound">
+                <img
+                src="src/personagens/13 Bloodhound.jpg"
+                alt="cabeça do Bloodhound"/>
+                <span>Bloodhound</span>
+              </li>
+              <li class="lendas tipo-Batedor" id="crypto">
+                <img
+                src="src/personagens/14 Crypto.jpg"
+                alt="cabeça do "/>
+                <span>Crypto</span>
+              </li>
+              <li class="lendas tipo-Batedor" id="seer">
+                <img
+                src="src/personagens/15 Seer.jpg"
+                alt="cabeça do Seer"/>
+                <span>Seer</span>
+              </li>
+              <li class="lendas tipo-Batedor" id="vantage">
+                <img
+                src="src/personagens/16 Vantage.jpg"
+                alt="cabeça do Vantage"/>
+                <span>Vantage</span>
+              </li>
+              <li class="lendas tipo-Controle" id="caustic">
+                <img
+                src="src/personagens/17 Caustic.jpg"
+                alt="cabeça do Caustic"/>
+                <span>Caustic</span>
+              </li>
+              <li class="lendas tipo-Controle" id="wattson">
+                <img
+                src="src/personagens/18 Wattson.jpg"
+                alt="cabeça do Wattson"/>
+                <span>Wattson</span>
+              </li>
+              <li class="lendas tipo-Controle" id="rampart">
+                <img
+                src="src/personagens/19 Rampart.jpg"
+                alt="cabeça do Rampart"/>
+                <span>Rampart</span>
+              </li>
+              <li class="lendas tipo-Controle" id="catalyst">
+                <img
+                src="src/personagens/20 Catalyst.jpg"
+                alt="cabeça do Catalyst"/>
+                <span>Catalyst</span>
+              </li>
+              <li class="lendas tipo-Controle" id="conduit">
+                <img
+                src="src/personagens/21 Conduit.jpg"
+                alt="cabeça do Conduit"/>
+                <span>Conduit</span>
+              </li>
+              <li class="lendas tipo-Suporte" id="mirage">
+                <img
+                src="src/personagens/08 Mirage.jpg"
+                alt="cabeça do mirage"/>
+                <span>Mirage</span>
+              </li>
+              <li class="lendas tipo-Suporte" id="lifeline">
+                <img
+                src="src/personagens/22 Lifeline.jpg"
+                alt="cabeça do Lifeline"/>
+                <span>Lifeline</span>
+              </li>
+              <li class="lendas tipo-Suporte" id="gibraltar">
+                <img
+                src="src/personagens/23 Gibraltar.jpg"
+                alt="cabeça do Gibraltar"/>
+                <span>Gibraltar</span>
+              </li>
+              <li class="lendas tipo-Suporte" id="loba">
+                <img
+                src="src/personagens/23 Loba.jpg"
+                alt="cabeça do Loba"/>
+                <span>Loba</span>
+              </li>
+          </ul>
+        </nav>
+        </div>
+    </main> 
+
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>

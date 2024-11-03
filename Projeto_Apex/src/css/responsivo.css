@@ -1,0 +1,41 @@
+@media (max-width: 768px) {
+    .lendas {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .cartao-lendas {
+        max-width: 100px;
+    }
+
+    .cartao-lendas .cartao-informacoes {
+      padding: 60px 30px 30px;
+      margin-top: -50px;
+    }
+  
+    .listagem {
+      max-width: 360px;
+    }
+  
+    .listagem ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+  
+    .listagem .lendas {
+      width: 45%;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      margin-bottom: 0;
+      border-radius: 8px;
+      min-height: 50px;
+    }
+  
+    .listagem .lendas span {
+      padding-right: 5px;
+      font-size: 14px;
+    }
+}
